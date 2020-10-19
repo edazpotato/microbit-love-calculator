@@ -29,6 +29,10 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     pressed.b = true;
 })
+input.onGesture(Gesture.Shake, function () {
+	pressed.a = true;
+    pressed.b = true;
+})
 function start () {
     basic.showLeds(`
         . # . # .
